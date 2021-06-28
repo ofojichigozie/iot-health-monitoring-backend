@@ -112,7 +112,7 @@ router.get('/health-records/:patientID/:temperature/:humidity/:pulseRate', (req,
 
     storage.push(healthRecords);
 
-    let contact = '08135439547,08039207982';
+    let contact = '09083755505,08135439547';
     let message = `TEMP:${temperature}, HUM:${humidity}, BPM:${pulseRate }`;
     sendSMS(contact, message);
 
